@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>test the parameter mayAdd</title>
+<script src="http://www.iapps.im/public/js/jquery-1.8.3.min.js"></script>
+<script src="BackToHash.jQuery.js"></script>
+<style type="text/css">
+	body,div,ul,li {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color: #f5f5f5;
+	}
+	ol {
+		list-style-position: inside;
+	}
+	li {
+		height: 200px;
+		width: 100%;
+		line-height: 200px;
+		background: #fd2654;
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+	}
+	li:nth-child(3n) {
+		background: #464fd2;
+	}
+	li:nth-child(3n+1) {
+		background: #c45892;
+	}
+	.wrap {
+		margin-bottom: 1000px;
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<ol>
+		<li id="id1" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id2" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id3" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id4" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id5" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id6" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id7" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id8" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id9" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id10" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id11" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id12" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id13" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id14" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id15" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id16" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id17" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id18" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id19" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+		<li id="id20" class="setHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>
+	</ol>
+</div>
+<script type="text/javascript">
+$(function() {
+	var bkt = $('.setHash').BackToHash();
+	setTimeout(function() {
+		$("ol").append('<li id="id21" class="newSetHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>\
+			<li id="id22" class="newSetHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>\
+			<li id="id23" class="newSetHash"><a href="a.html" >click me to jump to another page and click the browser go back button</a></li>');
+		bkt.add('.newSetHash');
+	}, 4000);
+});
+</script>
+</body>
+</html>
